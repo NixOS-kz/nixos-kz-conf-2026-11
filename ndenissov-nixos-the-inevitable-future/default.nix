@@ -1,5 +1,5 @@
-{ pkgs ? import <nixpkgs> {} }:
+{ pkgs ? import <nixpkgs> { } }:
 
-pkgs.runCommand "slides.pdf" {} ''
+pkgs.runCommand "slides.pdf" { } ''
   cp ${./slides.pdf} $out
 ''
